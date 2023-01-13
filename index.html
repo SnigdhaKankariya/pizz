@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        .a {
+            height: 250px;
+            background-color: rgb(207, 29, 29);
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 130px;
+        }
+
+        .body-container {
+            justify-content: center;
+        }
+        .left-section {
+            margin-right: 10px;
+        }
+        .flex-container-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-container-column {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-signup-section {
+            background-color: orange;
+            padding: 20px;
+        }
+        .category-section {
+            background-color: orange;
+            margin-top: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+        }
+        .login-signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        .button {
+            border: none;
+            background-color: white;
+            padding: 6px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 2px solid black;
+            color: black;
+            margin-left: 5px;
+        }
+
+        input.a1[type=submit] {
+            background-color: brown;
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        input.b1[type=submit] {
+            background-color: black;
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .reset-button-div {
+            align-items: center;
+        }
+
+        h2 {
+            align-content: center;
+            background-color: rgb(255, 203, 105);
+
+        }
+
+        .icon {
+            list-style-image: url(icon.png);
+        }
+
+        ::marker {
+            font-size: 30px;
+        }
+
+        .b:hover{
+            box-shadow: 0px 0px 4px 4px lightcoral;
+
+        }
+    </style>
+</head>
+
+<body align="center" bgcolor="#ffffb3">
+    <div class="a"> <img src="img/Pizza Logo.jpg" height="250px" width="250px" alt="loading"> <img src="img/image (11).jpeg"
+            height="250px" width="950px" alt="loading" class="b"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Great Deals</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Specials</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search">
+            </div>
+        </ul>
+    </nav>
+    <div class="flex-container-row body-container">
+        <div class="flex-container-column left-section">
+            <div class="login-signup-section">
+                <form class="login-signup-form">
+                    <div class="flex-container-row">
+                        <input class="a1" type="submit" value="Login">
+                        <input class="b1" type="submit" value="Sign up">
+                    </div> <br>
+                    Email Id: <br><br> <input type="email" name="e1"><br>
+                    Password: <br><br> <input type="password" name="p1"><br><br>
+                    <div class="flex-container-row reset-button-div">Forgot Password? <button class="button">Reset</button></div>
+                </form>
+            </div>
+            <div class="category-section">
+                <h2>Category</h2>
+                <!-- <ul>li*11>lorem2 -->
+                <font face="Book Antiqua" size="4">
+                    <ul class="icon">
+                        <li>Lorem, ipsum.</li>
+                        <li>Voluptate, quisquam!</li>
+                        <li>Nobis, corrupti?</li>
+                        <li>Reprehenderit, minus.</li>
+                        <li>Odit, iste!</li>
+                        <li>Dolor, natus?</li>
+                        <li>Hic, est.</li>
+                        <li>Ea, recusandae?</li>
+                        <li>Reiciendis, fuga.</li>
+                        <li>Quam, nihil?</li>
+                        <li>Provident, minus!</li>
+                    </ul>
+                </font>
+            </div>
+        </div>
+        <iframe align="center" height="1400px" width="870px" src="content.html"></iframe>&nbsp;&nbsp;
+        <iframe align="right" height="820px" width="300px" src="news.html"></iframe>
+    </div>
+</body>
+</html>
